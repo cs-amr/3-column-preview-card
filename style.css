@@ -1,0 +1,110 @@
+
+body {
+    
+    width: 1440px;
+    height: 800px;
+    background-color: #fff;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 920px ;
+    height: 500px ;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@media (max-width:375px ) {
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+    }
+}
+div {
+    padding: 45px;
+}
+.container div:first-child{
+    background-color:hsl(31, 77%, 52%) ;
+
+}
+.container div:nth-child(2){
+    background-color:hsl(184, 100%, 22%) ;
+
+}
+.container div:nth-child(3){
+    background-color:hsl(179, 100%, 13%) ;
+
+}
+.container div p{
+    font-family: "Lexend Deca",sans-serif;
+    font-weight: 400;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 17px;
+    line-height: 1.8rem;
+    
+
+}
+.container div h3{
+    font-family: "Big Shoulders Display",sans-serif;
+    font-weight: 700;
+    color:  hsl(0, 0%, 95%);
+    font-size: 35px;
+
+}
+button {
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    border:3px solid #fff ;
+    border-radius:75px ;
+    -webkit-border-radius:75px ;
+    -moz-border-radius:75px ;
+    -ms-border-radius:75px ;
+    -o-border-radius:75px ;
+    
+}
+
+.container div:first-child button{
+    color:hsl(31, 77%, 52%) ;
+
+}
+.container div:nth-child(2) button{
+    color:hsl(184, 100%, 22%) ;
+
+}
+.container div:nth-child(3) button{
+    color:hsl(179, 100%, 13%) ;
+
+}
+.container div:first-child button:hover{
+    color:white ;
+    background-color: transparent;
+
+}
+.container div:nth-child(2) button:hover{
+    color:white ;
+    background-color: transparent;
+
+}
+.container div:nth-child(3) button:hover{
+    color:white ;
+    background-color: transparent;
+
+}
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin: auto;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
